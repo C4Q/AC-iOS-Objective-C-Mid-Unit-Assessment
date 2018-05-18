@@ -13,6 +13,9 @@
 @property (assign) double green;
 @property (assign) double blue;
 @property (copy, nonatomic) NSString *hex;
+@property(assign, nonatomic) double redFloat;
+@property(assign, nonatomic) double greenFloat;
+@property(assign, nonatomic) double blueFLoat;
 
 + (NSArray *)allTheCrayons;
 
@@ -21,5 +24,10 @@
                        green:(double)green
                         blue:(double)blue
                          hex:(NSString *)hex;
+
+
+
+
+
 
 @end

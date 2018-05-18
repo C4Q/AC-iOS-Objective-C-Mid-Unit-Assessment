@@ -44,4 +44,16 @@
     return self;
 }
 
+- (double)redFloat {
+    return self.red/255;
+}
+
+- (double)greenFloat {
+    return self.green/255;
+    
+}
+- (double)blueFLoat {
+    return self.blue/255;
+}
+
 @end
