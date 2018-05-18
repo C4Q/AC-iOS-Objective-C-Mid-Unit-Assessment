@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AB620AB5DC900624059 /* AppDelegate.m */; };
-		571A1ABD20AB5DC900624059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABB20AB5DC900624059 /* Main.storyboard */; };
 		571A1ABF20AB5DCA00624059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABE20AB5DCA00624059 /* Assets.xcassets */; };
 		571A1AC220AB5DCA00624059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571A1AC020AB5DCA00624059 /* LaunchScreen.storyboard */; };
 		571A1AC520AB5DCA00624059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AC420AB5DCA00624059 /* main.m */; };
 		571A1ACF20AB5DCA00624059 /* CrayonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ACE20AB5DCA00624059 /* CrayonsTests.m */; };
 		571A1ADB20AB74DA00624059 /* Crayon.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ADA20AB74DA00624059 /* Crayon.m */; };
-		57D486A820ADE9560052E870 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D486A720ADE9560052E870 /* ViewController.m */; };
+		E24A8EB520AF1C1400C34010 /* CrayonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E24A8EB420AF1C1400C34010 /* CrayonsViewController.m */; };
+		E24A8EBC20AF1CD000C34010 /* CrayonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E24A8EBB20AF1CD000C34010 /* CrayonsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 		571A1AB220AB5DC900624059 /* Crayons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crayons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571A1AB520AB5DC900624059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		571A1AB620AB5DC900624059 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		571A1ABC20AB5DC900624059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		571A1ABE20AB5DCA00624059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		571A1AC120AB5DCA00624059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		571A1AC320AB5DCA00624059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,8 +40,10 @@
 		571A1AD020AB5DCA00624059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571A1AD920AB749E00624059 /* Crayon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crayon.h; sourceTree = "<group>"; };
 		571A1ADA20AB74DA00624059 /* Crayon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crayon.m; sourceTree = "<group>"; };
-		57D486A620ADE9560052E870 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		57D486A720ADE9560052E870 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E24A8EB320AF1C1400C34010 /* CrayonsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrayonsViewController.h; sourceTree = "<group>"; };
+		E24A8EB420AF1C1400C34010 /* CrayonsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrayonsViewController.m; sourceTree = "<group>"; };
+		E24A8EBA20AF1CD000C34010 /* CrayonsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrayonsView.h; sourceTree = "<group>"; };
+		E24A8EBB20AF1CD000C34010 /* CrayonsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrayonsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +85,8 @@
 		571A1AB420AB5DC900624059 /* Crayons */ = {
 			isa = PBXGroup;
 			children = (
+				E24A8EB920AF1CC200C34010 /* Views */,
 				57D486A920ADEB8A0052E870 /* Models */,
-				57D486AC20ADEBCB0052E870 /* Views */,
 				57D486AA20ADEB990052E870 /* Controllers */,
 				57D486AB20ADEBAE0052E870 /* Supporting Files */,
 				571A1AC320AB5DCA00624059 /* Info.plist */,
@@ -114,8 +115,8 @@
 		57D486AA20ADEB990052E870 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				57D486A620ADE9560052E870 /* ViewController.h */,
-				57D486A720ADE9560052E870 /* ViewController.m */,
+				E24A8EB320AF1C1400C34010 /* CrayonsViewController.h */,
+				E24A8EB420AF1C1400C34010 /* CrayonsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,7 +126,6 @@
 			children = (
 				571A1AB520AB5DC900624059 /* AppDelegate.h */,
 				571A1AB620AB5DC900624059 /* AppDelegate.m */,
-				571A1ABB20AB5DC900624059 /* Main.storyboard */,
 				571A1ABE20AB5DCA00624059 /* Assets.xcassets */,
 				571A1AC020AB5DCA00624059 /* LaunchScreen.storyboard */,
 				571A1AC420AB5DCA00624059 /* main.m */,
@@ -133,9 +133,11 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		57D486AC20ADEBCB0052E870 /* Views */ = {
+		E24A8EB920AF1CC200C34010 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E24A8EBA20AF1CD000C34010 /* CrayonsView.h */,
+				E24A8EBB20AF1CD000C34010 /* CrayonsView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,7 +224,6 @@
 			files = (
 				571A1AC220AB5DCA00624059 /* LaunchScreen.storyboard in Resources */,
 				571A1ABF20AB5DCA00624059 /* Assets.xcassets in Resources */,
-				571A1ABD20AB5DC900624059 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24A8EB520AF1C1400C34010 /* CrayonsViewController.m in Sources */,
+				E24A8EBC20AF1CD000C34010 /* CrayonsView.m in Sources */,
 				571A1AC520AB5DCA00624059 /* main.m in Sources */,
 				571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */,
-				57D486A820ADE9560052E870 /* ViewController.m in Sources */,
 				571A1ADB20AB74DA00624059 /* Crayon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		571A1ABB20AB5DC900624059 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571A1ABC20AB5DC900624059 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		571A1AC020AB5DCA00624059 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
