@@ -14,7 +14,8 @@
 		571A1AC520AB5DCA00624059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AC420AB5DCA00624059 /* main.m */; };
 		571A1ACF20AB5DCA00624059 /* CrayonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ACE20AB5DCA00624059 /* CrayonsTests.m */; };
 		571A1ADB20AB74DA00624059 /* Crayon.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ADA20AB74DA00624059 /* Crayon.m */; };
-		57D486A820ADE9560052E870 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D486A720ADE9560052E870 /* ViewController.m */; };
+		81B3B5DA20AF18B400C207CC /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B3B5D920AF18B400C207CC /* ColorsViewController.m */; };
+		81B3B5DD20AF19B300C207CC /* ColorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B3B5DC20AF19B300C207CC /* ColorDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,10 @@
 		571A1AD020AB5DCA00624059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571A1AD920AB749E00624059 /* Crayon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crayon.h; sourceTree = "<group>"; };
 		571A1ADA20AB74DA00624059 /* Crayon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crayon.m; sourceTree = "<group>"; };
-		57D486A620ADE9560052E870 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		57D486A720ADE9560052E870 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		81B3B5D820AF18B400C207CC /* ColorsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorsViewController.h; sourceTree = "<group>"; };
+		81B3B5D920AF18B400C207CC /* ColorsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsViewController.m; sourceTree = "<group>"; };
+		81B3B5DB20AF19B300C207CC /* ColorDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDetailViewController.h; sourceTree = "<group>"; };
+		81B3B5DC20AF19B300C207CC /* ColorDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +87,9 @@
 		571A1AB420AB5DC900624059 /* Crayons */ = {
 			isa = PBXGroup;
 			children = (
-				57D486A920ADEB8A0052E870 /* Models */,
-				57D486AC20ADEBCB0052E870 /* Views */,
-				57D486AA20ADEB990052E870 /* Controllers */,
 				57D486AB20ADEBAE0052E870 /* Supporting Files */,
+				57D486A920ADEB8A0052E870 /* Models */,
+				57D486AA20ADEB990052E870 /* Controllers */,
 				571A1AC320AB5DCA00624059 /* Info.plist */,
 			);
 			path = Crayons;
@@ -114,8 +116,10 @@
 		57D486AA20ADEB990052E870 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				57D486A620ADE9560052E870 /* ViewController.h */,
-				57D486A720ADE9560052E870 /* ViewController.m */,
+				81B3B5D820AF18B400C207CC /* ColorsViewController.h */,
+				81B3B5D920AF18B400C207CC /* ColorsViewController.m */,
+				81B3B5DB20AF19B300C207CC /* ColorDetailViewController.h */,
+				81B3B5DC20AF19B300C207CC /* ColorDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,13 +135,6 @@
 				571A1AC420AB5DCA00624059 /* main.m */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		57D486AC20ADEBCB0052E870 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B3B5DA20AF18B400C207CC /* ColorsViewController.m in Sources */,
 				571A1AC520AB5DCA00624059 /* main.m in Sources */,
 				571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */,
-				57D486A820ADE9560052E870 /* ViewController.m in Sources */,
 				571A1ADB20AB74DA00624059 /* Crayon.m in Sources */,
+				81B3B5DD20AF19B300C207CC /* ColorDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
