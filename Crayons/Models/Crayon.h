@@ -5,6 +5,7 @@
 //  Created by Alex Paul on 5/15/18.
 //  Copyright © 2018 Alex Paul. All rights reserved.
 //
+#import <Foundation/Foundation.h>
 
 @interface Crayon: NSObject
 
