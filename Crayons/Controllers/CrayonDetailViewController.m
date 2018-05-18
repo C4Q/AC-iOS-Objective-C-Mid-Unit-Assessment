@@ -83,21 +83,21 @@
 - (void) redSliderChanged {
     NSMutableString* redValue = [NSMutableString stringWithFormat:@"Red: %f", [_crayonDetailView.redSlider value]];
     [_crayonDetailView.redLabel setText:redValue];
-    UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:1.0];
+    UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:[_crayonDetailView.alphaStepper value]];
     [self.view setBackgroundColor:col];
 }
 
 - (void) greenSliderChanged {
     NSMutableString* greenValue = [NSMutableString stringWithFormat:@"Green: %f", [_crayonDetailView.greenSlider value]];
     [_crayonDetailView.greenLabel setText:greenValue];
-    UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:1.0];
+    UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:[_crayonDetailView.alphaStepper value]];
     [self.view setBackgroundColor:col];
 }
 
 - (void) blueSliderChanged {
     NSMutableString* blueValue = [NSMutableString stringWithFormat:@"Blue: %f", [_crayonDetailView.blueSlider value]];
     [_crayonDetailView.blueLabel setText:blueValue];
-    UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:1.0];
+    UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:[_crayonDetailView.alphaStepper value]];
     [self.view setBackgroundColor:col];
 }
 
