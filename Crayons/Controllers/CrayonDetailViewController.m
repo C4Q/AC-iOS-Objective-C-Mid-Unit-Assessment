@@ -37,6 +37,30 @@
     [self setSlidersChanged];
     [self setSteppedChanged];
     
+    [_crayonDetailView.resetButton addTarget:self action:@selector(reset) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void) reset {
+    UIColor *original = [UIColor colorWithRed:[_crayon red]/255 green:[_crayon green]/255 blue:[_crayon blue]/255 alpha:1.0];
+    [self.view setBackgroundColor: original];
+    
+    NSMutableString* redValue = [NSMutableString stringWithFormat:@"Red: %f", [_crayon red]/255];
+    NSMutableString* greenValue = [NSMutableString stringWithFormat:@"Green:  %f", [_crayon green]/255];
+    NSMutableString* blueValue = [NSMutableString stringWithFormat:@"Blue: %f", [_crayon blue]/255];
+    
+    [_crayonDetailView.redLabel setText:redValue];
+    [_crayonDetailView.greenLabel setText:greenValue];
+    [_crayonDetailView.blueLabel setText:blueValue];
+    
+    [_crayonDetailView.redSlider setValue:[_crayon red]/255];
+    [_crayonDetailView.greenSlider setValue:[_crayon green]/255];
+    [_crayonDetailView.blueSlider setValue:[_crayon blue]/255];
+    
+    [_crayonDetailView.alphaStepper setValue:1.0];
+    [_crayonDetailView.alphaLabel setText:@"Alpha: 1.0"];
+    
+    
 }
 
 - (void) setSteppedChanged {
