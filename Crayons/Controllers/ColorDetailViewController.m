@@ -21,6 +21,9 @@
     }
     return self;
 }
+
+//double redColor, greenColor, blueColor;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpBackgroundColor];
@@ -28,6 +31,8 @@
     [self configureSubviews];
     [self addSubviews];
     [self configureConstraints];
+    _redColor.text = [NSString stringWithFormat:@"%g", _crayon.red/255];
+    
 }
 
 -(void)setUpBackgroundColor {
@@ -44,20 +49,29 @@
 
     self.colorName.text = _crayon.name;
     
+    
 }
 
 -(void)addSubviews {
     [self.view addSubview:self.colorName];
+    [self.view addSubview:self.redColor];
 }
 
 -(void)configureConstraints {
   self.colorName.translatesAutoresizingMaskIntoConstraints = NO;
     [NSLayoutConstraint activateConstraints:@[
                                                 [self.colorName.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant: 40],
-                                                //[self.colorName.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
                                                 [self.colorName.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant: 150],
                                                 [self.colorName.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor ]
                                                  ]
+     ];
+     self.redColor.translatesAutoresizingMaskIntoConstraints = NO;
+    [NSLayoutConstraint activateConstraints:@[
+                                              [self.redColor.topAnchor constraintEqualToAnchor:self.colorName.bottomAnchor constant: 40],
+                                              //[self.colorName.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor],
+                                              [self.colorName.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant: 180],
+                                              //[self.colorName.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor ]
+                                              ]
      ];
 }
 

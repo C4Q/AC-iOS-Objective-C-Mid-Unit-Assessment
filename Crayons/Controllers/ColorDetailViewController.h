@@ -18,6 +18,8 @@
 @property (strong, nonatomic) UIStepper* alphaStepper;
 @property (strong, nonatomic) UILabel* alphaLabel;
 @property (strong, nonatomic) Crayon* crayon;
+
+
 -(instancetype)initWithCrayon:(Crayon*) crayon;
 
 @end
