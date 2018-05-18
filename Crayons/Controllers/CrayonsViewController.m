@@ -46,6 +46,10 @@
         crayonCell.backgroundColor = bgColor;
         [crayonCell.textLabel setText:[crayon name]];
         [crayonCell.detailTextLabel setText:[crayon hex]];
+        if ([[crayon hex]  isEqual: @"#000000"]) {
+            [crayonCell.textLabel setTextColor:[UIColor whiteColor]];
+            [crayonCell.detailTextLabel setTextColor:[UIColor whiteColor]];
+        }
     }
     return crayonCell;
 }

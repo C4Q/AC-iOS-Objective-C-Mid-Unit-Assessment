@@ -13,12 +13,12 @@
 -(instancetype) initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupViews];
+        [self setupSubviews];
     }
     return self;
 }
 
-- (void)setupViews {
+- (void)setupSubviews {
     [self setupCrayonsTableView];
 }
 
