@@ -7,6 +7,7 @@
 //
 
 #import "CrayonsViewController.h"
+#import "CrayonDetailViewController.h"
 #import "CrayonsView.h"
 #import "Crayon.h"
 
@@ -51,6 +52,13 @@
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [Crayon allTheCrayons].count;
+}
+
+#pragma mark - UITableView Delegate Methods
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CrayonDetailViewController *crayonDetailVC = [[CrayonDetailViewController alloc] initWithCrayon:[Crayon allTheCrayons][indexPath.row]];
+    [self.navigationController pushViewController:crayonDetailVC animated:YES];
 }
 
 @end
