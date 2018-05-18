@@ -12,6 +12,8 @@
 @interface ColorDetailViewController : UIViewController
 @property (strong, nonatomic) UILabel* colorName;
 @property (strong, nonatomic) UILabel* redColor;
+@property (strong, nonatomic) UILabel* blueColor;
+@property (strong, nonatomic) UILabel* greenColor;
 @property (strong, nonatomic) UISlider* redSlider;
 @property (strong, nonatomic) UISlider* greenSlider;
 @property (strong, nonatomic) UISlider* blueSlider;
