@@ -71,6 +71,14 @@
     NSMutableString* alphaValue = [NSMutableString stringWithFormat:@"Alpha: %f", [_crayonDetailView.alphaStepper value]];
     [_crayonDetailView.alphaLabel setText:alphaValue];
     UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:[_crayonDetailView.alphaStepper value]];
+    
+    
+    if ([_crayonDetailView.alphaStepper value] <= 0.5) {
+        [self makeLabelsWhite];
+    } else if ([_crayonDetailView.alphaStepper value] > 0.5) {
+        [self makeLabelsBlack];
+    }
+    
     [self.view setBackgroundColor:col];
 }
 
@@ -99,6 +107,22 @@
     [_crayonDetailView.blueLabel setText:blueValue];
     UIColor *col = [UIColor colorWithRed:[_crayonDetailView.redSlider value] green:[_crayonDetailView.greenSlider value] blue:[_crayonDetailView.blueSlider value] alpha:[_crayonDetailView.alphaStepper value]];
     [self.view setBackgroundColor:col];
+}
+
+- (void)makeLabelsWhite {
+    [_crayonDetailView.crayonNameLabel setTextColor:[UIColor whiteColor]];
+    [_crayonDetailView.redLabel setTextColor:[UIColor whiteColor]];
+    [_crayonDetailView.greenLabel setTextColor:[UIColor whiteColor]];
+    [_crayonDetailView.blueLabel setTextColor:[UIColor whiteColor]];
+    [_crayonDetailView.alphaLabel setTextColor:[UIColor whiteColor]];
+}
+
+- (void)makeLabelsBlack {
+    [_crayonDetailView.crayonNameLabel setTextColor:[UIColor blackColor]];
+    [_crayonDetailView.redLabel setTextColor:[UIColor blackColor]];
+    [_crayonDetailView.greenLabel setTextColor:[UIColor blackColor]];
+    [_crayonDetailView.blueLabel setTextColor:[UIColor blackColor]];
+    [_crayonDetailView.alphaLabel setTextColor:[UIColor blackColor]];
 }
 
 @end
