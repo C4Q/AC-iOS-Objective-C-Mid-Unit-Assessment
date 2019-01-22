@@ -12,7 +12,7 @@
 @implementation Crayon
 
 + (NSArray *)allTheCrayons {
-    Crayon *almond = [[Crayon alloc] initWithName:@"Almond" red:239 green:222 blue:205 hex:@"EFDECD"];
+    Crayon *almond = [[Crayon alloc] initWithName:@"Almond" red:239 green:222 blue:205 hex:@"#EFDECD"];
     Crayon *antiqueBrass = [[Crayon alloc] initWithName: @"Antique Brass" red: 205 green:149 blue: 117 hex: @"#CD9575"];
     Crayon *apricot = [[Crayon alloc] initWithName: @"Apricot" red: 253 green: 217 blue: 181 hex: @"#FDD9B5"];
     Crayon *aquamarine = [[Crayon alloc] initWithName: @"Aquamarine" red: 120 green: 219 blue: 226 hex: @"#78DBE2"];
